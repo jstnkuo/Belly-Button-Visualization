@@ -16,11 +16,11 @@ d3.json(url).then(function(data) {
 function init(){
     d3.json(url).then((data)=>{
     let names = data['names']
-    let otu = names[0]
-    console.log(otu)
-    bar_chart(otu);
-    bubble_chart(otu)
-    metadata_info(otu)
+    let patient_id = names[0]
+    console.log(patient_id)
+    bar_chart(patient_id);
+    bubble_chart(patient_id)
+    metadata_info(patient_id)
     })
 }
 
