@@ -88,12 +88,12 @@ function metadata_info(sample_id){
         })
     }
 
-// call this fuction when a new sample is selected 
+// selection function 
 function optionChanged(selectObject){
     console.log(selectObject);
     bar_chart(selectObject);
-    bubble_chart(selectObject)
-    metadata_info(selectObject)
+    bubble_chart(selectObject);
+    metadata_info(selectObject);
 };
 
 //display initial view 
